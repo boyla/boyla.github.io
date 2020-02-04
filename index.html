@@ -153,6 +153,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-android发布lib（aar）到jitpack" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/04/android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack/">android发布lib（aar）到jitpack</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/04/android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack/" class="archive-article-date">
+  	<time datetime="2020-02-04T02:23:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580739525129&di=d3219e62c76b8d1b24078dc00e8c854d&imgtype=0&src=http%3A%2F%2F5.26923.com%2Fdownload%2Fpic%2F000%2F324%2F9195f173c1a41d99e7df634b712c65b9.jpg" alt=""></p>
+<p>在日常开发中，有一些自己开发模块在不同的项目（公司项目，个人项目等）中都会用到，文件一多，cv大法就不太好用了。于是使用github和jitpack将模块发布成aar，这样，无论何时何地，<strong>只需要加一句依赖代码，即可完美导入</strong>。在此记录一下发布过程，方便日后查阅（记于2020.2.4）。</p>
+<p>准备工作：<br>&#160;&#160;可用的github账号；<br>&#160;&#160;可用的android studio；</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ul>
+<li><p>新建一个空的android工程，在工程中，新建一个android lib，将想要打包的文件（Java 文件以及其他资源文件）放入lib</p>
+</li>
+<li><p>在project下的build.gradle中相应位置加入粗体内容<br>buildscript {<br>&#160;&#160;&#160;&#160;dependencies {<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>classpath ‘com.github.dcendents:android-maven-gradle-plugin:2.1’</strong></p>
+</li>
+<li><p>在lib下的build.gradle首行加入粗体内容<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>apply plugin: ‘com.github.dcendents.android-maven’<br>group=’com.github.<em>YourGitUserName</em>‘</strong></p>
+</li>
+<li><p>点击图示位置，登陆github并将工程上传到github<br><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gbk478ytwij312u0no7b3.jpg" alt=""></p>
+</li>
+<li><p>在github中找到该工程，点击Release标签，发布public release</p>
+</li>
+<li><p>进入<a href="https://jitpack.io" target="_blank" rel="noopener">https://jitpack.io</a>，使用github账号登入，找到工程及刚刚发布的release，点击 “Get it”，等待一段时间编译成功后，按照网页下方的配置即可实现一句语句导入</p>
+</li>
+</ul>
+<h2 id="可能遇到的坑"><a href="#可能遇到的坑" class="headerlink" title="可能遇到的坑"></a>可能遇到的坑</h2><p>有时在本地能成功编译，但在jitpack上，编译失败，报错日志提示gradle版本不对，这时需要降低gradle版本，提交后重新编译即可。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/04/android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-时间管理：如何充分利用24小时" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -424,6 +515,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">效率</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,16 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://nearu.fun">
-  <title>Archives: 2019/12 | NearU</title>
+  <title>android发布lib（aar）到jitpack | NearU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="NearU">
-<meta property="og:url" content="http:&#x2F;&#x2F;nearu.fun&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
+  <meta name="description" content="在日常开发中，有一些自己开发模块在不同的项目（公司项目，个人项目等）中都会用到，文件一多，cv大法就不太好用了。于是使用github和jitpack将模块发布成aar，这样，无论何时何地，只需要加一句依赖代码，即可完美导入。在此记录一下发布过程，方便日后查阅（记于2020.2.4）。 准备工作：&amp;#160;&amp;#160;可用的github账号；&amp;#160;&amp;#160;可用的android stud">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android发布lib（aar）到jitpack">
+<meta property="og:url" content="http:&#x2F;&#x2F;nearu.fun&#x2F;2020&#x2F;02&#x2F;04&#x2F;android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack&#x2F;index.html">
 <meta property="og:site_name" content="NearU">
+<meta property="og:description" content="在日常开发中，有一些自己开发模块在不同的项目（公司项目，个人项目等）中都会用到，文件一多，cv大法就不太好用了。于是使用github和jitpack将模块发布成aar，这样，无论何时何地，只需要加一句依赖代码，即可完美导入。在此记录一下发布过程，方便日后查阅（记于2020.2.4）。 准备工作：&amp;#160;&amp;#160;可用的github账号；&amp;#160;&amp;#160;可用的android stud">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1580739525129&amp;di&#x3D;d3219e62c76b8d1b24078dc00e8c854d&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2F5.26923.com%2Fdownload%2Fpic%2F000%2F324%2F9195f173c1a41d99e7df634b712c65b9.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006tNbRwgy1gbk478ytwij312u0no7b3.jpg">
+<meta property="article:published_time" content="2020-02-04T02:23:11.000Z">
+<meta property="article:modified_time" content="2020-02-04T02:29:29.046Z">
 <meta property="article:author" content="boyla">
-<meta property="article:tag" content="NearU">
+<meta property="article:tag" content="android">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1580739525129&amp;di&#x3D;d3219e62c76b8d1b24078dc00e8c854d&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2F5.26923.com%2Fdownload%2Fpic%2F000%2F324%2F9195f173c1a41d99e7df634b712c65b9.jpg">
   
     <link rel="alternative" href="/atom.xml" title="NearU" type="application/atom+xml">
   
@@ -151,60 +158,216 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-android发布lib（aar）到jitpack" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/12/14/NearU%E5%8F%91%E5%B8%83/" class="archive-article-date">
-  	<time datetime="2019-12-14T12:43:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/12/14/NearU%E5%8F%91%E5%B8%83/">NearU发布</a>
+    <h1 class="article-title" itemprop="name">
+      android发布lib（aar）到jitpack
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/02/04/android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack/" class="archive-article-date">
+  	<time datetime="2020-02-04T02:23:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580739525129&di=d3219e62c76b8d1b24078dc00e8c854d&imgtype=0&src=http%3A%2F%2F5.26923.com%2Fdownload%2Fpic%2F000%2F324%2F9195f173c1a41d99e7df634b712c65b9.jpg" alt=""></p>
+<p>在日常开发中，有一些自己开发模块在不同的项目（公司项目，个人项目等）中都会用到，文件一多，cv大法就不太好用了。于是使用github和jitpack将模块发布成aar，这样，无论何时何地，<strong>只需要加一句依赖代码，即可完美导入</strong>。在此记录一下发布过程，方便日后查阅（记于2020.2.4）。</p>
+<p>准备工作：<br>&#160;&#160;可用的github账号；<br>&#160;&#160;可用的android studio；</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ul>
+<li><p>新建一个空的android工程，在工程中，新建一个android lib，将想要打包的文件（Java 文件以及其他资源文件）放入lib</p>
+</li>
+<li><p>在project下的build.gradle中相应位置加入粗体内容<br>buildscript {<br>&#160;&#160;&#160;&#160;dependencies {<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>classpath ‘com.github.dcendents:android-maven-gradle-plugin:2.1’</strong></p>
+</li>
+<li><p>在lib下的build.gradle首行加入粗体内容<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>apply plugin: ‘com.github.dcendents.android-maven’<br>group=’com.github.<em>YourGitUserName</em>‘</strong></p>
+</li>
+<li><p>点击图示位置，登陆github并将工程上传到github<br><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gbk478ytwij312u0no7b3.jpg" alt=""></p>
+</li>
+<li><p>在github中找到该工程，点击Release标签，发布public release</p>
+</li>
+<li><p>进入<a href="https://jitpack.io" target="_blank" rel="noopener">https://jitpack.io</a>，使用github账号登入，找到工程及刚刚发布的release，点击 “Get it”，等待一段时间编译成功后，按照网页下方的配置即可实现一句语句导入</p>
+</li>
+</ul>
+<h2 id="可能遇到的坑"><a href="#可能遇到的坑" class="headerlink" title="可能遇到的坑"></a>可能遇到的坑</h2><p>有时在本地能成功编译，但在jitpack上，编译失败，报错日志提示gradle版本不对，这时需要降低gradle版本，提交后重新编译即可。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">NearU发布</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">android</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://nearu.fun/2020/02/04/android%E5%8F%91%E5%B8%83lib%EF%BC%88aar%EF%BC%89%E5%88%B0jitpack/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/01/31/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%EF%BC%9A%E5%A6%82%E4%BD%95%E5%85%85%E5%88%86%E5%88%A9%E7%94%A824%E5%B0%8F%E6%97%B6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">时间管理：如何充分利用24小时</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+
+
+  
+      <section id="comments" class="comments">
+        <style>
+          .comments{margin:30px;padding:10px;background:#fff}
+          @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+        </style>
+        <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: '9xoMVb7sdl9omDjPOqagx6is-gzGzoHsz',
+      app_key: 'soHDiwNKhcO5GoDurytL8dzl',
+      placeholder: 'say sth'
+    });
+</script>
+    </section>
+  
+
+
 
 
           </div>
@@ -227,8 +390,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
